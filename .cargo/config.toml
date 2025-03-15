@@ -3,6 +3,7 @@ runner = "probe-rs run --chip STM32F103C8"
 
 rustflags = [
   "-C", "link-arg=-Tlink.x",
+  "-C", "link-arg=--nmagic",
 ]
 
 [build]

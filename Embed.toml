@@ -1,0 +1,16 @@
+[default.probe]
+# usb_vid = "1209"
+# usb_pid = "c55d"
+protocol = "Swd"
+
+[default.flashing]
+enabled = true
+
+[default.rtt]
+enabled = true
+
+[default.general]
+chip = "STM32F103C8"
+
+[default.gdb]
+enabled = false

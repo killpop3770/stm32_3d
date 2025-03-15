@@ -25,8 +25,33 @@ name = "stm32_3d"
 test = false
 bench = false
 
-[profile.release]
-opt-level = "z"
+[profile.dev]
 codegen-units = 1
-lto = true
+debug = 2
+debug-assertions = true
+incremental = false
+opt-level = 2
+overflow-checks = true
 panic = "abort"
+
+[profile.release]
+codegen-units = 1
+debug = 2
+debug-assertions = false
+incremental = false
+lto = 'fat'
+opt-level = 's'
+overflow-checks = false
+panic = "abort"
+
+[profile.dev.build-override]
+codegen-units = 8
+debug = false
+debug-assertions = false
+opt-level = 0
+
+[profile.release.build-override]
+codegen-units = 8
+debug = false
+debug-assertions = false
+opt-level = 0
