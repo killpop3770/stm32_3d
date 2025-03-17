@@ -10,9 +10,9 @@ cortex-m-rt = "0.7.5"
 panic-halt = "1.0.0"
 nb = "1"
 stm32f1xx-hal = {version = "0.10.0", features = ["stm32f103", "rt"]}
-# panic-probe = { version = "0.3.1", features = ["print-defmt"] }
-# defmt = "0.3"
-# defmt-rtt = "0.4"
+panic-probe = { version = "0.3.1", features = ["print-defmt"] }
+defmt = "0.3"
+defmt-rtt = "0.4"
 ssd1306 = "0.8.0"
 embedded-graphics = "0.8.0"
 libm = "0.2.11"
